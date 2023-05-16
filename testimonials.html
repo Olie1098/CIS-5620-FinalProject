@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Testimonials</title>
+        <link rel="icon" type="image/x-icon" href="img/soccerball.webp" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Sports Scholarships U</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <!-- Content > images: responsive images 
+                    img-fluid maintains a 100% max-width regardless of the size of the screen -->
+            <img src="img/huddle.jpeg" class="img-fluid" alt="pitch background" title="pitch" >
+    
+            <div class="container">
+    
+            <h1 class="display-2 text-center">Meet our Student-Athletes</h1>
+    
+            <!-- Content > typography: lead -->
+            </div>
+        </header>
+        <!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <!-- Post preview-->
+            <a id="markus"></a>
+            <div class="post-preview">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/just.jpg" alt="...">
+                <h1 style="text-align:center;"> Markus Just</h1>
+                <h2 style="text-align:center;">California State University, Los Angeles <img src= "img/badge.png" width="40" height="40"></h2>
+                <h5 class="post-title">"I was born in Oslo, Norway and became determined to compete in soccer at a high level. When I approached Sports Scholarship U, they matched my ambition and I knew it was the path I wanted to follow. With Sports U, I was awarded a sports scholarship and given the chance to study in one of the world's biggest cities".   </h5>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+
+            <!-- Post preview-->
+            <a id="oliver"></a>
+            <div class="post-preview">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/oliver.jpg" alt="...">
+                <h1 style="text-align:center;"> Oliver Diaz </h1>
+                <h2 style="text-align:center;">California State University, Los Angeles <img src= "img/badge.png" width="40" height="40"> </h2> 
+                <h5 class="post-title">"After the pandemic, I wasn't sure whether I was going to find a school that was the right fit for me. However, after speaking with Sports Scholarship U, they revived my passion for soccer and changed my life completely. They understand if you are struggling to get things done and help find solutions to fix it. It is really important to mention that once you've had some conversation with them, you really understand that these men are really professional about their job and put a lot of their time into giving you a tailored program. I would highly recommend anyone who is interested in playing soccer in college to use Sports U". </h5>
+            </div>
+            <script>
+                var x = 0;
+                var images2 = [];
+                var time = 4000;
+
+                images2[0] = "img/goal.jpeg";
+                images2[1] = 'img/olie2.jpg';
+                images2[2] = "img/sonoma.jpg";
+
+                function changeImage(){
+                    document.getElementById("slide1").src = images2[x];
+
+                    if(x < images2.length - 1){
+                        x++;
+                    } else {
+                        x = 0;
+                    }
+                    setTimeout(changeImage, time);
+                }
+
+                window.onload = changeImage;
+            </script>
+
+            <img id="slide1" width="600" height="300"> 
+            <!-- Divider-->
+            <hr class="my-4" />
+
+            <!-- Pager-->
+        </div>
+    </div>
+</div>
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Sports Scholarship U</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
